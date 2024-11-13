@@ -1,8 +1,16 @@
 /* General Use Start */
+
+body
+{
+    background-color: rgb(128, 96, 50);
+}
+
 .footer-promo-bar
 {
     background-color: #1e2c20;
     color: white;
+    text-align: center;
+    padding: 1rem;
 }
 
 h1{
@@ -32,14 +40,35 @@ p
 {
     font-size: 18px;
 }
+
+button
+{
+    width: 159px;
+    height: 42px;
+    font-size: 16px;
+    border: 1px;
+    border-color: #292828;    
+}
+
+.border-round
+{
+    border-radius: 10px;
+}
+
+.center
+{
+    display: flex;
+    justify-content: center;
+}
+
 /* General Use End */
 
-/* Navbar Start */
+                                        /* Navbar Start */
 .logo
 {
     color: #FB5108;
 }
-/* Navbar End */
+                                        /* Navbar End */
 
 /* Hero Image Start */
 @media (max-width: 450px)
@@ -53,46 +82,80 @@ p
 
 /* Hero Image End */
 
-/* Start Cooking Start */
+                                                        /* Start Cooking Start */
 .start-cooking-image
 {
     object-fit: cover;
 }
 
-/* Start Cooking End */
-
-/* New Arrivals Start (flex) */
-.flex-center
+.flex-container
 {
     display: flex;
     justify-content: center;
+    padding-top: 4rem;
+    gap: 44px;
 }
 
-.flex-between
+.cooking-text
 {
-    display: flex;
-    justify-content: space-evenly;
+    padding-top: 1rem;
 }
 
-@media (max-width: 425px)
+
+
+
+
+                                                            /* Start Cooking End */
+
+/* New Arrivals Start */
+
+.arrivals-images
 {
-    .arrivals-phone
-    {
-        object-fit: contain;
-        display: flex;
-        justify-content: center;
-    }
+    width: 800px;
+    height: 632px;
+    object-fit: cover; 
 }
-/* New Arrivals End (flex) */
 
-/* Reviews Start (grid)  */
+/* New Arrivals End */
 
-.main-grid
+/* Best Sellers Start (grid) */
+
+.myCard
+{
+    width: 497px;
+    height: 625px;
+    border: 1px #1e2c20;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.card-content
+{
+    padding: 1rem;
+}
+
+.card-button
+{
+    margin: 2rem 0rem 0rem 1rem;
+}
+/* .best-sellers-container
+{
+    width: auto;
+} */
+
+.best-sellers-grid
 {
     display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat (3, 1fr);
+    grid-template-rows: repeat (2, 1fr);
+    gap: 24px;
+    min-height: 100vh;
 }
+
+/* Best Sellers End (grid) */
+
+
+/* Reviews Start (grid)  */
 
 
 /* Reviews End (grid)  */
