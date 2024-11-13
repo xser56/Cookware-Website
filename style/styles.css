@@ -1,8 +1,8 @@
 /* General Use Start */
 
-body
+bod
 {
-    background-color: rgb(128, 96, 50);
+    background-color: rgb(162, 115, 48);
 }
 
 .footer-promo-bar
@@ -61,6 +61,11 @@ button
     justify-content: center;
 }
 
+.divide-section
+{
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+}
 /* General Use End */
 
                                         /* Navbar Start */
@@ -83,6 +88,7 @@ button
 /* Hero Image End */
 
                                                         /* Start Cooking Start */
+
 .start-cooking-image
 {
     object-fit: cover;
@@ -100,11 +106,6 @@ button
 {
     padding-top: 1rem;
 }
-
-
-
-
-
                                                             /* Start Cooking End */
 
 /* New Arrivals Start */
@@ -119,11 +120,19 @@ button
 /* New Arrivals End */
 
 /* Best Sellers Start (grid) */
+.best-sellers-grid
+{
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr);
+    gap: 24px;
+    /* padding-left: 7rem;
+    padding-right: 2rem;   */
+}
 
 .myCard
 {
     width: 497px;
-    height: 625px;
+    height: 757px;
     border: 1px #1e2c20;
     border-style: solid;
     border-radius: 10px;
@@ -134,28 +143,100 @@ button
     padding: 1rem;
 }
 
+.card-image-padding
+{
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
 .card-button
 {
     margin: 2rem 0rem 0rem 1rem;
 }
-/* .best-sellers-container
-{
-    width: auto;
-} */
 
-.best-sellers-grid
-{
-    display: grid;
-    grid-template-columns: repeat (3, 1fr);
-    grid-template-rows: repeat (2, 1fr);
-    gap: 24px;
-    min-height: 100vh;
-}
 
 /* Best Sellers End (grid) */
 
-
 /* Reviews Start (grid)  */
 
+.reviews-grid
+{
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr);
+    gap: 30px;
+  
+}
+
+.reviews-card1
+{
+    background-image: url("/assets/images/Reviews1.jpg");
+    width: 531px;
+    height: 664.75px;
+    border-radius: 10px;
+    object-fit: fill;
+    object-fit: cover;
+}
+
+.reviews-card2
+{
+    background-image: url("/assets/images/Reviews2.jpg");
+    border-radius: 10px;
+    width: 531px;
+    height: 664.75px;
+    object-fit: fill;
+    object-fit: cover;
+}
+
+.reviews-card3
+{
+    background-image: url("/assets/images/Reviews3.jpg");
+    border-radius: 10px;
+    width: 531px;
+    height: 664.75px;
+    object-fit: fill;
+    object-fit: cover;
+}
+
+.grey-box-overlay
+{
+    border-radius: 10px;
+    background: rgba(18, 18, 18, 0.60);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    height: 345px;
+    padding: 73px 28px;
+    color: white;
+}
+
+.middle
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 6rem;
+}
 
 /* Reviews End (grid)  */
+
+/* Footer Start */
+
+.footer-grid
+{
+    display: grid;
+    grid-template-columns: repeat(4, 4fr);
+    text-align: start;
+}
+
+.footer-bar
+{
+    background-color: #1e2c20;
+    color: white;
+    padding: 1rem;
+}
+
+.footer-divide
+{
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+    margin-top: 8rem;
+}
