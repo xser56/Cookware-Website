@@ -1,0 +1,98 @@
+/* General Use Start */
+.footer-promo-bar
+{
+    background-color: #1e2c20;
+    color: white;
+}
+
+h1{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h4{
+    font-size: 48px;
+}
+
+h5{
+    font-size: 20px;
+}
+
+p
+{
+    font-size: 18px;
+}
+/* General Use End */
+
+/* Navbar Start */
+.logo
+{
+    color: #FB5108;
+}
+/* Navbar End */
+
+/* Hero Image Start */
+@media (max-width: 450px)
+{
+   .heroImage
+   {
+    width: auto;
+   }
+
+}
+
+/* Hero Image End */
+
+/* Start Cooking Start */
+.start-cooking-image
+{
+    object-fit: cover;
+}
+
+/* Start Cooking End */
+
+/* New Arrivals Start (flex) */
+.flex-center
+{
+    display: flex;
+    justify-content: center;
+}
+
+.flex-between
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 425px)
+{
+    .arrivals-phone
+    {
+        object-fit: contain;
+        display: flex;
+        justify-content: center;
+    }
+}
+/* New Arrivals End (flex) */
+
+/* Reviews Start (grid)  */
+
+.main-grid
+{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+/* Reviews End (grid)  */
