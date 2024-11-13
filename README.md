@@ -9,3 +9,5 @@ Navbar
 desktop spacing
 
 tablet/mobile responsiveness 
+
+Fix horizontal scrollbar
