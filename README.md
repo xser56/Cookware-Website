@@ -1,17 +1,11 @@
 Need to Do:
 
 Major:
-Finish Best Sellers section ( Center and a little padding) 
-
-Review section
-Footer section (email section & socials)
-
-Header section
 Navbar
-desktop spacing
+Fix Reviews cards
 
-tablet/mobile responsiveness 
+Responsiveness
 
 Minor:
+Footer - padding and fix social media Icons 
 Add Fonts
-Fix scrollbar
