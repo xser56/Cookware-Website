@@ -74,15 +74,21 @@ button
 .logo
 {
     background: #D76151;
-
+    margin-left: 6rem;
 }
+
+.h6
+{
+    font-size: 24px;
+}
+
                                         /* Navbar End */
 
 /* Hero Image Start */
 .hero-grid
 {
     display: grid;
-    grid-template-columns: repeat(1 ,1fr);
+    grid-template-columns: repeat(1fr);
 }
 
 .overlay-background
@@ -97,6 +103,15 @@ button
   
 }
 
+@media screen and (max-width:900px)
+{
+    .hero-overlay-tablet
+    {
+        bottom: 60%;
+        padding: 1px;
+        left: .9rem;
+    }   
+}
 /* Hero Image End */
 
 /* Start Cooking Start */
@@ -119,6 +134,15 @@ button
     padding-top: 1rem;
 }
 
+@media screen and (max-width: 900px)
+{
+    .cooking-tablet
+    {
+        display: flex;
+        flex-direction:  column;
+    }
+}
+
  /* Start Cooking End */
 
 /* New Arrivals Start */
@@ -127,7 +151,14 @@ button
 {
     width: 100%;
     height: 632px;
-    object-fit: cover ;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 900px) {
+    .arrivals-tablet
+    {
+         padding-bottom: 3rem;
+    }
 }
 
 
@@ -141,7 +172,6 @@ button
     grid-template-columns: repeat( 3, 1fr);
     gap: 24px;
     margin: 0 auto;
-
 }
 
 .myCard
@@ -170,36 +200,39 @@ button
     margin: 2rem 0rem 0rem 1rem;
 }
 
+@media screen and (max-width: 900px)
+{
+    .best-sellers-grid
+    {
+        grid-template-columns: 1fr;
+    }
+}
 
 /* Best Sellers End (grid) */
 
 /* Reviews Start (grid)  */
 
 .reviews-grid
-{
+{ 
+    width: 85%;
     display: grid;
     grid-template-columns: repeat( 3, 1fr);
     gap: 30px;
-  
+    margin: 0 auto;
 }
 
 .reviews-card1
 {
     background-image: url("/assets/images/Reviews1.jpg");
-    width: 531px;
     height: 664.75px;
     border-radius: 10px;
-    object-fit: fill;
-    object-fit: cover;
 }
 
 .reviews-card2
 {
     background-image: url("/assets/images/Reviews2.jpg");
     border-radius: 10px;
-    width: 531px;
     height: 664.75px;
-    object-fit: fill;
     object-fit: cover;
 }
 
@@ -207,9 +240,7 @@ button
 {
     background-image: url("/assets/images/Reviews3.jpg");
     border-radius: 10px;
-    width: 531px;
     height: 664.75px;
-    object-fit: fill;
     object-fit: cover;
 }
 
@@ -218,8 +249,8 @@ button
     border-radius: 10px;
     background: rgba(18, 18, 18, 0.60);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    height: 345px;
-    padding: 73px 28px;
+    height: 500px;
+    padding: 73px 28px ;
     color: white;
 }
 
@@ -230,6 +261,16 @@ button
     align-content: center;
     padding-top: 6rem;
 }
+
+@media screen and (max-width: 900px)
+{
+    .reviews-tablet
+    {
+        grid-template-columns: 1fr;  
+        width: 95%;
+    }
+}
+
 
 /* Reviews End (grid)  */
 
