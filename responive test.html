@@ -12,35 +12,30 @@
 </head>
   <body>
     <!-- Navbar (dropdown) -->
-    <!-- <nav class="navbar navbar-expand-lg nav-grid">
-      <div class="container-fluid ">
-        <div class="col">
-            <img src="./assets/icons/Pot.png" class="logo my-3 py-1 px-2 border-round logo-tablet" alt=" Logo">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid nav-tablet nav-phone">
+        <div class="col logo-tablet logo-phone">
+            <img src="./assets/icons/Pot.png" class="logo my-1 py-1 px-2 border-round" alt=" Logo">
         </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse text-gap" id="navbarSupportedContent">
+        <h6> COOKWARE</h6> 
+        <h6> BAKEWARE</h6>
+        <h6> ACCESSORIES</h6>
+        <h6 class="orange"> SALE </h6>
       </div>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon "></span>
-      </button>
-      <div class="collapse navbar-collapse " id="navbarSupportedContent ">
-        <div><h6> COOKWARE</h6> </div>
       </div>
-        <div><h6> BAKEWARE</h6></div>
-        <div><h6> ACCESSORIES</h6></div>
-        <div><h6 class="orange"> SALE </h6></div>
-    </div>
-  </nav> -->
-
-    <!-- <div class="container">
-      <div class="col logo"><img src="./assets/icons/Pot.png" alt="pot"></div>
-    </div> -->
+  </nav>
 
      <!-- Hero Image (any)-->
      <div class="hero-grid ">
       <img src="./assets/images/hero.jpg" width="100%" alt="heroImg">
-      <div class="overlay-background hero-overlay-tablet hero-overlay-phone">
+      <!-- <div class="overlay-background hero-overlay-tablet hero-overlay-phone">
         <h4>Cookware Built to Last</h4>
       </div>
-    </div>
+    </div> -->
 
      <!-- Header Sale -->
      <div class="container-fluid footer-promo-bar">
@@ -50,22 +45,26 @@
       </div>
 
       <!-- Start Cooking (Flex) -->
-        <div> <h1 class="flex-container "> Start Cooking</h1>
+        <div> <h1 class="flex-container divide-section"> Start Cooking</h1>
       <div class="flex-container cooking-tablet">
+        <div class="flex-container">
             <div class=""> <img class="border-round" src="./assets/images/StartCooking1.jpeg"  style="max-width: 100%; height: 347px; " alt="StartCooking1"> <h5 class="cooking-text">Cast Iron Pot </h5></div>
             <div class=""> <img class="border-round" src="./assets/images/StartCooking2.jpeg"  style="max-width: 100%; height: 347px; " alt="StartCooking2"> <h5 class="cooking-text">Stock Pot </h5></div>
-            
+          </div>
+
+          <div class="flex-container">
             <div class=""> <img class="border-round" src="./assets/images/StartCooking3.jpeg"  style="max-width: 100%; height: 347px; " alt="StartCooking3"> <h5 class="cooking-text">Sauce Pan </h5></div>
             <div class=""> <img class="border-round" src="./assets/images/StartCooking4.jpeg"  style="max-width: 347px; height: 347px; " alt="StartCooking4"> <h5 class="cooking-text">Accessories </h5></div>
+          </div>
         </div>
     </div>
 
     <!-- New Arrivals (BootStrap) -->
-    <div class="container pt-5 ">
+    <div class="container pt-5 gap-5">
       <div class="row">
         <h1 class="d-flex justify-content-center pb-4"> New arrivals </h1>
-          <div class="col-lg arrivals-tablet ">
-              <img src="./assets/images/NewArrivals1.jpg" class="arrivals-images" alt="NewArrivals1">
+          <div class="col-lg-6 arrivals-tablet arrivals-images-response ">
+              <img src="./assets/images/NewArrivals1.jpg" class="arrivals-images arrivals-images-desk" alt="NewArrivals1">
               <h2 class="pt-3"> Fall Collection</h2>
               <p class=""> Our 2023 Fall Collection just came out with beautiful autumn color cookware.</p>
             </div>
@@ -85,7 +84,7 @@
 
         <div class="myCard ">
           <div class="center card-image-padding">
-            <img class="border-round" src="./assets/images/BestSeller1.jpg" width="100%" height="338px" alt="BestSeller1">
+            <img class="border-round imgcover" src="./assets/images/BestSeller1.jpg" width="100%" height="338px" alt="BestSeller1">
           </div>
           <div class="card-content">
           <h2> Fall Bakeware </h2>
@@ -98,7 +97,7 @@
 
       <div class="myCard">
         <div class="center card-image-padding">
-          <img class="border-round" src="./assets/images/BestSeller2.jpg" width="100%" height="338px" alt="BestSeller2">
+          <img class="border-round imgcover" src="./assets/images/BestSeller2.jpg" width="100%" height="338px" alt="BestSeller2">
         </div>
         <div class="card-content">
         <h2> Stock Pot </h2>
@@ -110,7 +109,7 @@
 
     <div class="myCard">
       <div class="center card-image-padding">
-        <img class="border-round" src="./assets/images/BestSeller3.jpg" width="100%" height="338px" alt="BestSeller3">
+        <img class="border-round imgcover" src="./assets/images/BestSeller3.jpg" width="100%" height="338px" alt="BestSeller3">
       </div>
       <div class="card-content">
       <h2> Sauce Pan </h2>

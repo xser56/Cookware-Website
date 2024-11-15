@@ -1,4 +1,4 @@
-/* General Use Start */
+/* ----------------------------- General Use Start ---------------------------------*/
 
 .footer-promo-bar {
   background-color: #1e2c20;
@@ -56,9 +56,15 @@ button {
   padding-bottom: 3rem;
 }
 
-/* General Use End */
+/* ----------------------------- General Use End ---------------------------------*/
 
-/* Navbar Start */
+/* ----------------------------- NavBar Start ------------------------------------*/
+.nav-grid
+{
+    display: grid;
+    grid-template-columns: repeat( 5 , 1fr);
+}
+
 .logo {
   background: #d76151;
   margin-left: 6rem;
@@ -69,26 +75,50 @@ button {
     color: #d76151;
 }
 
-.nav-grid
+.text-gap
 {
-    display: grid;
-    grid-template-columns: repeat( 5 , 1fr);
+  gap: 30px;
 }
 
-.h6 {
+
+h6 {
   font-size: 24px;
 }
 
-@media screen and (max-width: 990px){
+@media screen and (max-width : 990px) and (min-width: 500px){
+
+    .nav-tablet
+    {
+      display: flex ;
+      flex-direction: row-reverse;
+      align-items: flex-end;
+    }
 
     .logo-tablet
     {
-        grid-column: 3;
+      padding-left: 25rem;
+      
     }
 }
-/* Navbar End */
 
-/* Hero Image Start */
+@media screen and (max-width: 450px){
+
+  .nav-phone
+  {
+    display: flex ;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+  }
+
+  .logo-phone
+  {
+    padding-left: 4rem;
+    width: 10px;
+  }
+}
+/* ----------------------------- NavBar End  ------------------------------------*/
+
+/* ------------------------------- Hero Image Start ---------------------------- */
 .hero-grid {
   display: grid;
   grid-template-columns: repeat(1fr);
@@ -120,18 +150,13 @@ button {
     }
   }
 
-/* Hero Image End */
+/* ------------------------------- Hero Image End ---------------------------- */
 
-/* Start Cooking Start */
-
-.start-cooking-image {
-  object-fit: cover;
-}
+/* ------------------------------- Start Cooking Start ---------------------------- */
 
 .flex-container {
   display: flex;
   justify-content: center;
-  padding-top: 4rem;
   gap: 44px;
 }
 
@@ -145,18 +170,26 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    object-fit: cover;
   }
 }
 
-/* Start Cooking End */
+/* ------------------------------- Start Cooking End ---------------------------- */
 
-/* New Arrivals Start */
+/* -------------------------------  New Arrivals Start ---------------------------- */
 
 .arrivals-images {
   width: 100%;
-  height: 632px;
+  
   object-fit: cover;
 }
+
+@media screen and (max-width: 1920px) {
+  .arrivals-images-desk {
+    height: 636px;
+  }
+}
+
 
 @media screen and (max-width: 900px) {
   .arrivals-tablet {
@@ -164,11 +197,19 @@ button {
   }
 }
 
-/* New Arrivals End */
+@media screen and (max-width: 450px) {
 
-/* Best Sellers Start (grid) */
+  .arrivals-images-response
+    {
+      height: auto;
+    }
+}
+/* -------------------------------  New Arrivals End  ---------------------------- */
+
+/* -------------------------------  Best Sellers Start  ---------------------------- */
 .best-sellers-grid {
   width: 85%;
+  height: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
@@ -176,8 +217,6 @@ button {
 }
 
 .myCard {
-  width: 100%;
-  height: auto;
   border: 1px #1e2c20;
   border-style: solid;
   border-radius: 10px;
@@ -191,17 +230,26 @@ button {
 .card-image-padding {
   display: flex;
   justify-content: center;
-  object-fit: cover;
 }
 
 .card-button {
   margin: 2rem 0rem 0rem 1rem;
 }
 
+.imgcover
+{
+  object-fit: cover;
+}
+
 @media screen and (max-width: 900px) {
   .best-sellers-grid {
     grid-template-columns: 1fr;
   }
+
+  .imgcover
+{
+  height: auto;
+}
 }
 
 @media screen and (max-width: 425px) {
@@ -214,13 +262,17 @@ button {
         margin-bottom: 2rem;
     }
 
+    .imgcover
+    {
+      height: auto;
+    }
+
   }
   
+/* -------------------------------  Best Sellers End  ---------------------------- */
 
+/* -------------------------------  Reviews Start  ---------------------------- */
 
-/* Best Sellers End (grid) */
-
-/* Reviews Start (grid)  */
 
 .reviews-grid {
   width: 85%;
@@ -273,13 +325,13 @@ button {
   }
 }
 
-/* Reviews End (grid)  */
+/* -------------------------------  Reviews End  ---------------------------- */
 
-/* Footer Start */
+/* -------------------------------  Footer Start  ---------------------------- */
 
 .footer-grid {
   display: grid;
-  grid-template-columns: repeat(2 1fr);
+  grid-template-columns: repeat(4, 1fr);
   text-align: start;
 }
 
@@ -339,3 +391,4 @@ button {
   }
 }
 
+/* -------------------------------  Footer End  ---------------------------- */
