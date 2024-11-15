@@ -1,9 +1,12 @@
 Need to Do:
 
-Major:
-Navbar response - center text and make it move into drop down. Switch drop down and logo with grid
-Fix ugly ass Reviews cards 
-Start Cooking section response needs two columns
+Major
+- Fix absolute header text
 
-Minor:
-Fix spacing and padding
+
+Clean Up
+- Nav bar icons
+- Start Cooking images
+- New arrivals fall collection image
+- Best sellers button spacing
+- Footer Spacing

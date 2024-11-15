@@ -10,195 +10,197 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/styles.css">
 </head>
-  <body>
-    <!-- Navbar (dropdown) -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <div class="col">
-            <a href="#" role="button" class="btn logo">
-              <img src="./assets/icons/Pot.png" alt="Logo">
-            </a>
-          </div>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav container-fluid text-center">
-              <li class="nav-item col">
-                <a class="nav-link navbar-text" href="./pages/about.html">ABOUT</a>
-              </li>
-              <li class="nav-item col">
-                <a class="nav-link navbar-text" href="./pages/menu.html">MENU</a>
-              </li>
-              <li class="nav-item col">
-                <a class="nav-link navbar-text" href="./pages/catering.html">ACCESSORIES</a>
-              </li>
-              <li class="nav-item col">
-                <a class="nav-link navbar-text" href="./pages/catering.html">SALE </a>
-              </li> 
-            </ul>
-          </div>
-        </div>
+<body>
+  <!-- Navbar (dropdown) -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid nav-tablet nav-phone">
+      <div class="col logo-tablet logo-phone">
+          <img src="./assets/icons/Pot.png" class="logo my-1 py-1 px-2 border-round" alt=" Logo">
       </div>
-    </nav>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse text-gap" id="navbarSupportedContent">
+      <h6> COOKWARE</h6> 
+      <h6> BAKEWARE</h6>
+      <h6> ACCESSORIES</h6>
+      <h6 class="orange"> SALE </h6>
+    </div>
+    </div>
+</nav>
 
-     <!-- Hero Image (any)-->
-     <div class="hero-grid">
-      <img src="./assets/images/hero.jpg" alt="heroImg">
-      <div class="overlay-background">
-        <h4>Cookware Built to Last</h4>
+   <!-- Hero Image (any)-->
+   <div class="hero-grid ">
+    <img src="./assets/images/hero.jpg" width="100%" alt="heroImg">
+    <!-- <div class="overlay-background hero-overlay-tablet hero-overlay-phone">
+      <h4>Cookware Built to Last</h4>
+    </div>
+  </div> -->
+
+   <!-- Header Sale -->
+   <div class="container-fluid footer-promo-bar">
+     <div class="row">
+       <div class="col p-1"> Sale $10 off when you spend $150 </div>
       </div>
     </div>
 
-     <!-- Header Sale -->
-     <div class="container-fluid footer-promo-bar">
-       <div class="row">
-         <div class="col p-4"> Sale $10 off when you spend $150 </div>
-        </div>
-      </div>
-
-      <!-- Start Cooking (Flex) -->
-        <div> <h1 class="flex-container"> Start Cooking</h1>
+    <!-- Start Cooking (Flex) -->
+      <div> <h1 class="flex-container divide-section"> Start Cooking</h1>
+    <div class="flex-container cooking-tablet">
       <div class="flex-container">
-            <div class=""> <img class="border-round" src="./assets/images/StartCooking1.jpeg"  style="max-width: 379px; height: 347px; " alt="StartCooking1"> <h5 class="cooking-text">Cast Iron Pot </h5></div>
-            <div class=""> <img class="border-round" src="./assets/images/StartCooking2.jpeg"  style="max-width: 379px; height: 347px; " alt="StartCooking2"> <h5 class="cooking-text">Stock Pot </h5></div>
-            <div class=""> <img class="border-round" src="./assets/images/StartCooking3.jpeg"  style="max-width: 379px; height: 347px; " alt="StartCooking3"> <h5 class="cooking-text">Sauce Pan </h5></div>
-            <div class=""> <img class="border-round" src="./assets/images/StartCooking4.jpeg"  style="max-width: 379px; height: 347px; " alt="StartCooking4"> <h5 class="cooking-text">Accessories </h5></div>
+          <div class=""> <img class="border-round cooking-image-size" src="./assets/images/StartCooking1.jpeg"  alt="StartCooking1"> <h5 class="cooking-text">Cast Iron Pot </h5></div>
+          <div class=""> <img class="border-round cooking-image-size" src="./assets/images/StartCooking2.jpeg"  alt="StartCooking2"> <h5 class="cooking-text">Stock Pot </h5></div>
         </div>
-    </div>
 
-    <!-- New Arrivals (BootStrap) -->
-    <div class="container pt-5">
-      <div class="row">
-        <h1 class="d-flex justify-content-center pb-4"> New arrivals </h1>
-          <div class="col-6 ">
-              <img src="./assets/images/NewArrivals1.jpg" class="arrivals-images" alt="NewArrivals1">
-              <h2 class="pt-4"> Fall Collection</h2>
-              <p class=""> Our 2023 Fall Collection just came out with beautiful autumn color cookware.</p>
-            </div>
-
-            <div class="col-6">
-              <img src="./assets/images/NewArrivals2.jpg" class="arrivals-images" alt="NewArrivals2">
-              <h2 class="pt-4"> Nonstick Wok 14 inch </h2>
-              <p> The nonstick wok is one of our most popular cookware. Perfect for everyday stir fry.</p>
-            </div>
-    </div>
+        <div class="flex-container">
+          <div class="img4"> <img class="border-round cooking-image-size" src="./assets/images/StartCooking3.jpeg"  alt="StartCooking3"> <h5 class="cooking-text">Sauce Pan </h5></div>
+          <div class=""> <img class="border-round cooking-image-size" src="./assets/images/StartCooking4.jpeg"  alt="StartCooking4"> <h5 class="cooking-text">Accessories </h5></div>
+        </div>
+      </div>
   </div>
 
-    <!-- Best Sellers (Grid) -->
-    <h1 class="center divide-section"> Best Sellers</h1>
-    <div class="best-sellers-grid">
-
-        <div class="myCard">
-          <div class="center card-image-padding">
-            <img class="border-round" src="./assets/images/BestSeller1.jpg" width="449px" height="338px" alt="BestSeller1">
+  <!-- New Arrivals (BootStrap) -->
+  <div class="container pt-5 gap-5">
+    <div class="row">
+      <h1 class="d-flex justify-content-center pb-4"> New arrivals </h1>
+        <div class="col-lg-6 arrivals-tablet arrivals-images-response">
+            <img src="./assets/images/NewArrivals1.jpg" class="arrivals-images arrivals-images-desk pot-size" alt="NewArrivals1">
+            <h2 class="pt-3 "> Fall Collection</h2>
+            <p class=""> Our 2023 Fall Collection just came out with beautiful autumn color cookware.</p>
           </div>
-          <div class="card-content">
-          <h2> Stock Pot </h2>
-          <p>Our fall bakeware is back again with warm fall colors.Check out our fall line of bakeware from fall colored pots to baking pans.
-          </p>
-        </div>
-          <button class="card-button"> SHOP NOW</button>
-      </div>
-      
 
-      <div class="myCard">
+          <div class="col-lg arrivals-images-response">
+            <img src="./assets/images/NewArrivals2.jpg" class="arrivals-images" alt="NewArrivals2">
+            <h2 class="pt-3"> Nonstick Wok 14 inch </h2>
+            <p> The nonstick wok is one of our most popular cookware. Perfect for everyday stir fry.</p>
+          </div>
+
+  </div>
+</div>
+
+  <!-- Best Sellers (Grid) -->
+  <h1 class="center divide-section "> Best Sellers</h1>
+  <div class="best-sellers-grid best-sellers-tablet best-sellers-grid-phone">
+
+      <div class="myCard ">
         <div class="center card-image-padding">
-          <img class="border-round" src="./assets/images/BestSeller2.jpg" width="449px" height="338px" alt="BestSeller2">
+          <img class="border-round imgcover" src="./assets/images/BestSeller1.jpg" width="100%" height="338px" alt="BestSeller1">
         </div>
         <div class="card-content">
-        <h2> Stock Pot </h2>
-        <p>The Stock Pot is a cookware that is revolutionizing the way you cook! With its innovative design and advanced materials. The Stock Pot is the perfect choice for any kitchen. Its unique combination of ceramic and aluminum ensures that your food cooks evenly and quickly, while its non-stick coating ensures that nothing sticks to the surface. Whether you’re cooking for one or the whole family, the Stock Pot is the perfect choice!
+        <h2> Fall Bakeware </h2>
+        <p>Our fall bakeware is back again with warm fall colors.Check out our fall line of bakeware from fall colored pots to baking pans.
         </p>
       </div>
-        <button class="card-button"> SHOP NOW</button>
+        <button class="card-button button-best"> SHOP NOW</button>
     </div>
+    
 
     <div class="myCard">
       <div class="center card-image-padding">
-        <img class="border-round" src="./assets/images/BestSeller3.jpg" width="449px" height="338px" alt="BestSeller3">
+        <img class="border-round imgcover" src="./assets/images/BestSeller2.jpg" width="100%" height="338px" alt="BestSeller2">
       </div>
       <div class="card-content">
-      <h2> Sauce Pan </h2>
-      <p>The Sauce Pan is the perfect cookware for making a variety of sauces, stews, soups, and more. Its stainless steel construction ensures even heat distribution for better and faster cooking. No matter what you're cooking, you can count on the Sauce Pan to help you cook like a pro.
+      <h2> Stock Pot </h2>
+      <p>The Stock Pot is a cookware that is revolutionizing the way you cook! With its innovative design and advanced materials. The Stock Pot is the perfect choice for any kitchen. Its unique combination of ceramic and aluminum ensures that your food cooks evenly and quickly, while its non-stick coating ensures that nothing sticks to the surface. Whether you’re cooking for one or the whole family, the Stock Pot is the perfect choice!
       </p>
     </div>
-      <button class="card-button"> SHOP NOW</button>
+      <button class="card-button button-best"> SHOP NOW</button>
   </div>
-</div> <!-- End of grid container-->
 
-  <!-- Reviews (any)-->
-  <h1 class="center divide-section"> Reviews</h1>
-<div class=" reviews-grid d-flex justify-content-center">
-
-  <div class="reviews-card1">
-    <div class="container middle">
-      <div class="row grey-box-overlay">
-        <h3 class=""> Wok Star! </h3>
-        <p>I love cooking using the cast iron wok for everyday family meals. With the wok it makes the food I make turn into restaurant quality meals. I bought this wok for my parents and also siblings!
-        </p>
-      </div>
-      </div>
+  <div class="myCard">
+    <div class="center card-image-padding">
+      <img class="border-round imgcover" src="./assets/images/BestSeller3.jpg" width="100%" height="338px" alt="BestSeller3">
+    </div>
+    <div class="card-content">
+    <h2> Sauce Pan </h2>
+    <p>The Sauce Pan is the perfect cookware for making a variety of sauces, stews, soups, and more. Its stainless steel construction ensures even heat distribution for better and faster cooking. No matter what you're cooking, you can count on the Sauce Pan to help you cook like a pro.
+    </p>
+  </div>
+    <button class="card-button button-best"> SHOP NOW</button>
 </div>
+</div> 
+<!-- End of grid container-->
+
+<!-- Reviews (any)-->
+<h1 class="center divide-section "> Reviews</h1>
+<div class=" reviews-grid reviews-tablet  ">
 
 <div class="reviews-card1">
   <div class="container middle">
     <div class="row grey-box-overlay">
-      <h3 class=""> Wok Star! </h3>
+      <h3 class="align"> Wok Star! </h3>
       <p>I love cooking using the cast iron wok for everyday family meals. With the wok it makes the food I make turn into restaurant quality meals. I bought this wok for my parents and also siblings!
       </p>
+      <h5 class="center"> David Jones</h5>
     </div>
     </div>
 </div>
 
-<div class="reviews-card1">
-<div class="container middle">
+<div class="reviews-card2">
+<div class="container ">
   <div class="row grey-box-overlay">
-    <h3 class=""> Wok Star! </h3>
-    <p>I love cooking using the cast iron wok for everyday family meals. With the wok it makes the food I make turn into restaurant quality meals. I bought this wok for my parents and also siblings!
+    <h3 class="align"> Built To Last </h3>
+    <p>Bought the cast iron pot and it lasted longer than the other brands I bought. Not only are the pots durable but the colors of the pots are so nice!
     </p>
+    <h5 class="center"> Danielle Johnson</h5>
   </div>
   </div>
 </div>
-    </div>
 
-    <!-- footer (any)-->
-    <div class="footer-grid footer-bar footer-divide">
-      <div class="col">
-        <h5> ABOUT OUR HOME</h5>
-        <p> ABOUT US</p>
-        <p> CAREER</p>
-        <p> PRIVACY</p>
-        <p> MEDIA RELATIONS</p>
-      </div>
-      
-      <div class="col">
-        <h5> PRODUCT</h5>
-        <p> ABOUT US</p>
-        <p> CAREER</p>
-        <p> PRIVACY</p>
-        <p> MEDIA RELATIONS</p>
-      </div>
+<div class="reviews-card3">
+<div class="container ">
+<div class="row grey-box-overlay">
+  <h3 class="align"> Best Cookware! </h3>
+<p> I love all the cookware. I just bought my 4th pan and love it so much! I love the color of the pot and how durable the pots are. I’ve recommended the cast iron pot to all my friends and family.</p>   
+<h5 class="center"> Michelle</h5>
+</div>
+</div>
+</div>
 
-      <div class="col">
-        <h5> CUSTOMER SERVICE</h5>
-        <p> ABOUT US</p>
-        <p> CAREER</p>
-        <p> PRIVACY</p>
-        <p> MEDIA RELATIONS</p>
-      </div>
+  </div>
 
-      <div class="col">
-        <P>Subscribe to our newsletter to be the first to know about new products and special events.</P>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Enter email address" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Subscribe</button>
-        </form>
-        <div class="row">
-    
-        </div>
-      </div>
-
+  <!-- footer (any)-->
+  <div class="footer-grid footer-bar footer-divide footer-tablet">
+    <div class="col about-tablet">
+      <h5> ABOUT OUR HOME</h5>
+      <p> ABOUT US</p>
+      <p> CAREER</p>
+      <p> PRIVACY</p>
+      <p> MEDIA RELATIONS</p>
     </div>
     
+    <div class="col product-tablet">
+      <h5> PRODUCT</h5>
+      <p> COOKWARE</p>
+      <p> BAKEWARE</p>
+      <p> BEST SELLERS</p>
+      <p> ACCESSORIES</p>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+    <div class="col customer-tablet">
+      <h5> CUSTOMER SERVICE</h5>
+      <p> CONTACT US</p>
+      <p> ORDER STATUS</p>
+      <p> RETURNS & EXCHANGES</p>
+      <p> FAQS</p>
+    </div>
+
+    <!-- <div></div> -->
+    
+    <div class="col email-tablet">
+      <P>Subscribe to our newsletter to be the first to know about new products and special events.</P>
+      <form class="">
+        <input class="me-2 pe-5" type="search" placeholder="Enter email address" aria-label="Search">
+        <button class="btn btn-outline-light" >Subscribe</button>
+      </form>
+      <div class="row pt-2 email-tablet">
+        <img src="/assets/icons/Screenshot 2024-11-14 212211.png" class="social" alt="social media">
+      </div>
+    </div>
+
+  </div>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
 </html>
